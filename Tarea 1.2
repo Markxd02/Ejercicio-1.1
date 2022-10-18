@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcular(){
+            //Accedo a los valores
+            var Celsius = parseInt(document.getElementById('id_Celsius').value);
+           
 
+            //Realizamos el calculo
+            var solucion = Celsius * 1.8 + 32;
+            //Mostramos la solución
+            document.getElementById('id_salida').value = solucion;
+        }
+    </script>
+
+    <form>
+       Celsius: <input type="number" id="id_Celsius"><br>
+    
+       <input type="button" value="Calcular" onclick="calcular();">
+       <hr>
+       En Farenheit son <input type="text" id="id_salida" readonly> 
+
+
+    </form>
+</body>
+</html>
